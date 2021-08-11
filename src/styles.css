@@ -1,0 +1,18 @@
+body {
+  margin: 0px;
+}
+.component-library {
+}
+header {
+  background-color: grey;
+}
+main {
+  background-color: grey;
+}
+main > nav {
+}
+main > section {
+}
+footer {
+  background-color: grey;
+}
