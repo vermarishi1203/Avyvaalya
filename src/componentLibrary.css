@@ -1,0 +1,72 @@
+:root {
+  --padding: 1rem;
+  --margin: 1rem;
+  --text-primary: black;
+  --text-secondary: grey;
+  --bg-primary: blue;
+  --bg-secondary: green;
+}
+body {
+  margin: 0px;
+  color: var(--text-primary);
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 15vh;
+  background-color: var(--bg-primary);
+  z-index: 1;
+}
+header > h1 {
+  padding: 0 var(--padding);
+}
+header > .fa-github {
+  margin-left: auto;
+  font-size: 3rem;
+}
+.side-nav {
+  position: fixed;
+  top: 15vh;
+  left: 0;
+  overflow-y: scroll;
+  height: 85vh;
+  width: 20vw;
+}
+.side-nav > h2 {
+  padding: 0 var(--padding);
+}
+.side-nav > ul {
+  padding: 0;
+}
+.list {
+  padding-left: 2rem;
+}
+.list > a {
+  text-decoration: none;
+}
+.docs {
+  margin-top: 15vh;
+  margin-left: 20vw;
+  padding: var(--padding);
+}
+footer {
+  margin-left: 20vw;
+  text-align: center;
+  padding: var(--padding);
+  background-color: var(--bg-primary);
+}
+footer > nav > .fa-github {
+  margin: 0 var(--margin) 0 var(--margin);
+  font-size: 2rem;
+}
+footer > nav > .fa-linkedin {
+  margin: 0 var(--margin) 0 var(--margin);
+  font-size: 2rem;
+}
+footer > nav > .fa-twitter {
+  margin: 0 var(--margin) 0 var(--margin);
+  font-size: 2rem;
+}
