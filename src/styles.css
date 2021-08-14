@@ -1,3 +1,12 @@
+:root {
+  --padding: 1rem;
+  --margin: 1rem;
+  --primary-color: hsl(262, 83%, 58%);
+  --primary-dark: hsl(264, 67%, 35%);
+  --primary-light: hsl(255, 92%, 76%);
+  --text: white;
+}
+
 /* <<< Avatar >>> */
 
 .avatar {
@@ -7,7 +16,7 @@
   margin: 0px;
 }
 .avatar--letter {
-  background-color: darkorange;
+  background-color: var(--primary-color);
   text-align: center;
   font-size: 24px;
   line-height: 48px;
@@ -70,26 +79,26 @@
 
 .button {
   border-radius: 8px;
-  border: solid blue;
+  border: solid var(--primary-color);
   margin: 0.5rem;
   padding: 1rem;
 }
 .button--primary {
-  background-color: blue;
+  background-color: var(--primary-color);
   color: white;
 }
 .button--secondary {
-  color: blue;
+  color: var(--primary-color);
 }
 .button--link {
   border: none;
-  color: blue;
+  color: var(--primary-color);
   background-color: transparent;
 }
 .button--icon {
   border: none;
   padding: 0;
-  background-color: grey;
+  background-color: var(--primary-color);
 }
 .button--icon__image {
   border-radius: 8px;
@@ -100,7 +109,7 @@
   position: fixed;
   right: 1rem;
   bottom: 1rem;
-  background-color: blue;
+  background-color: var(--primary-color);
   color: white;
   border-radius: 50%;
   line-height: 70%;
@@ -115,7 +124,7 @@
   font-size: 0.8rem;
   padding: 0.2rem 0.4rem;
   color: white;
-  background-color: grey;
+  background-color: var(--primary-color);
 }
 
 /* <<< Card >>> */
@@ -127,7 +136,7 @@
   max-width: 15rem;
   flex-direction: column;
   border-radius: 8px;
-  background-color: grey;
+  background-color: var(--primary-light);
 }
 .card__image {
   border-radius: 8px 8px 0px 0px;
@@ -145,7 +154,7 @@
   width: auto;
   height: 1rem;
   position: absolute;
-  background: green;
+  background: var(--primary-color);
   font-size: 0.8rem;
   line-height: 1rem;
   padding: 0 0.5rem;
@@ -159,18 +168,18 @@
   width: 0;
   height: 0;
   border-right: 0.5rem solid transparent;
-  border-top: 0.5rem solid green;
-  border-bottom: 0.5rem solid green;
+  border-top: 0.5rem solid var(--primary-color);
+  border-bottom: 0.5rem solid var(--primary-color);
 }
 .card--text-overlay {
-  color: white;
+  color: var(--primary-light);
   opacity: 90%;
 }
 .card--text-overlay > button {
   opacity: 90%;
   background-color: transparent;
-  color: white;
-  border: solid white;
+  color: var(--primary-light);
+  border: solid var(--primary-light);
 }
 .card__image--overlay {
   position: absolute;
@@ -222,6 +231,7 @@
   border: none;
   border-bottom: solid hsl(0, 0%, 30%) 2px;
   margin: 10px;
+  color: var(--text);
 }
 .input::placeholder {
   color: hsl(0, 0%, 30%);
@@ -259,14 +269,14 @@
 /* <<< List >>> */
 .list {
   list-style: none;
-  background-color: grey;
+  background-color: var(--primary-color);
   padding: 1rem;
 }
 .list:hover {
-  background-color: darkgray;
+  background-color: var(--primary-dark);
 }
 .list--spaced__container {
-  background-color: lightgray;
+  background-color: var(--primary-light);
   padding: 1rem 0rem;
   border-radius: 8px;
 }
@@ -275,7 +285,6 @@
   margin: 1rem;
 }
 .list--stacked__container {
-  background-color: lightgray;
   padding: 0rem;
 }
 .list--stacked {
@@ -287,12 +296,17 @@
 .modal {
   position: relative;
   border-radius: 8px;
-  background-color: grey;
+  background-color: var(--primary-light);
+  color: var(--text);
 }
-.modal > main > p {
-  padding: 1rem;
+.modal > .header {
+  padding: var(--padding);
+  padding-bottom: 0;
 }
-.modal > footer {
+.modal > .main > p {
+  padding: 0 var(--padding);
+}
+.modal > .footer {
   padding: 0rem;
   display: flex;
   flex-direction: row;
@@ -306,7 +320,8 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background-color: grey;
+  color: var(--text);
+  background-color: var(--primary-color);
   position: fixed;
   top: 0px;
   left: 0px;
@@ -327,13 +342,13 @@
 /* <<< Rating >>> */
 
 .rating {
-  padding: 1rem;
+  padding: var(--padding);
 }
 .rating__icon--filled {
-  color: red;
+  color: var(--primary-dark);
 }
 .rating__icon--empty {
-  color: grey;
+  color: var(--primary-light);
 }
 
 /* <<< Simplified grid >>> */
@@ -349,7 +364,7 @@
 .grid-item {
   padding: 1rem;
   margin: 1rem;
-  background-color: grey;
+  background-color: var(--primary-color);
 }
 
 /* <<< Snackbar >>> */
@@ -357,7 +372,7 @@
 .snackbar {
   position: relative;
   border-radius: 8px;
-  border: solid grey 2px;
+  border: solid var(--primary-light) 2px;
 }
 .snackbar--text {
   padding: 0rem 1rem;
@@ -367,13 +382,16 @@
 
 .heading {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: var(--primary-color);
 }
 .text--small {
   font-size: 0.8rem;
+  color: var(--primary-color);
 }
 .text--center {
   text-align: center;
+  color: var(--primary-color);
 }
 .text--grey {
   color: grey;
@@ -385,8 +403,6 @@
   box-shadow: 4px 4px 8px black;
 }
 
-/* <<< Font Awesome >>> */
-
 @media only screen and (min-width: 768px) {
   .nav--mobile {
     display: none;
@@ -397,18 +413,22 @@
   .nav--desktop {
     display: flex;
     justify-content: space-around;
-    background-color: hsl(0, 0%, 30%);
+    background-color: var(--primary-color);
+    height: 3rem;
   }
   .nav--desktop > a {
-    padding: 1rem 2rem;
-    background-color: hsl(0, 0%, 30%);
+    padding: var(--padding);
+    text-align: center;
+    width: 25%;
+    background-color: var(--primary-color);
     text-decoration: none;
-    color: white;
+    color: var(--text);
     font-weight: bold;
+    border-bottom: solid var(--primary-color) 4px;
   }
-  .nav--desktop > a:active {
-    background-color: gray;
-    border-bottom: solid hsl(240, 100%, 60%) 2px;
-    color: hsl(240, 100%, 60%);
+  .nav--desktop > a:focus {
+    border-bottom: solid var(--primary-dark) 4px;
+    color: var(--primary-dark);
+    background-color: var(--primary-light);
   }
 }

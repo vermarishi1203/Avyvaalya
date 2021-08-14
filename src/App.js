@@ -91,22 +91,24 @@ export default function ComponentLibrary() {
     <div classname="component-library">
       <header>
         <h1>{componentLibraryName}</h1>
-        <button className="button button--icon fab fa-github"></button>
+        <a className="fab fa-github"></a>
         <button className="button button--secondary">Download</button>
       </header>
-      <nav className="side-nav">
+      <section className="components">
         <h2>Components</h2>
-        <ul>
-          {navItems.map((item) => (
-            <li
-              className="list list--stacked"
-              onClick={() => componentClickHandler(item)}
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
-      </nav>
+        <nav className="side-nav">
+          <ul>
+            {navItems.map((item) => (
+              <li
+                className="list list--stacked"
+                onClick={() => componentClickHandler(item)}
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </section>
       <section className="docs">{renderComponent}</section>
       <footer>
         <h3>

@@ -1,14 +1,14 @@
 :root {
   --padding: 1rem;
   --margin: 1rem;
-  --text-primary: black;
-  --text-secondary: grey;
-  --bg-primary: blue;
-  --bg-secondary: green;
+  --primary-color: hsl(262, 83%, 58%);
+  --primary-dark: hsl(264, 67%, 35%);
+  --primary-light: hsl(255, 92%, 76%);
+  --text: white;
 }
 body {
   margin: 0px;
-  color: var(--text-primary);
+  color: var(--text);
 }
 header {
   position: fixed;
@@ -16,27 +16,45 @@ header {
   left: 0;
   right: 0;
   display: flex;
+  align-items: center;
   height: 15vh;
-  background-color: var(--bg-primary);
+  background-color: var(--primary-color);
   z-index: 1;
 }
 header > h1 {
   padding: 0 var(--padding);
 }
 header > .fa-github {
-  margin-left: auto;
   font-size: 3rem;
+  color: var(--text);
+  background-color: var(--primary-color);
+  margin-left: auto;
+  height: 100%;
+  line-height: 15vh;
+  padding: 0 var(--padding);
 }
-.side-nav {
+header > .fa-github:hover {
+  background-color: var(--primary-dark);
+}
+header > button {
+  font-weight: bold;
+}
+.components {
   position: fixed;
   top: 15vh;
   left: 0;
-  overflow-y: scroll;
   height: 85vh;
   width: 20vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
-.side-nav > h2 {
+.components > h2 {
   padding: 0 var(--padding);
+  color: var(--primary-color);
+}
+.side-nav {
+  overflow-y: scroll;
 }
 .side-nav > ul {
   padding: 0;
@@ -56,17 +74,39 @@ footer {
   margin-left: 20vw;
   text-align: center;
   padding: var(--padding);
-  background-color: var(--bg-primary);
+  background-color: var(--primary-color);
+}
+footer > h3 > a {
+  text-decoration: none;
+  color: var(--text);
+}
+footer > h3 > a:hover {
+  text-decoration: underline;
 }
 footer > nav > .fa-github {
   margin: 0 var(--margin) 0 var(--margin);
   font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+footer > nav > .fa-github:hover {
+  background-color: var(--primary-dark);
 }
 footer > nav > .fa-linkedin {
   margin: 0 var(--margin) 0 var(--margin);
   font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+footer > nav > .fa-linkedin:hover {
+  background-color: var(--primary-dark);
 }
 footer > nav > .fa-twitter {
   margin: 0 var(--margin) 0 var(--margin);
   font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+footer > nav > .fa-twitter:hover {
+  background-color: var(--primary-dark);
 }
