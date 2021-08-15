@@ -1,5 +1,5 @@
+import "./avyavaalya.css";
 import "./styles.css";
-import "./componentLibrary.css";
 import { useState } from "react";
 import { Intro } from "./intro";
 import {
@@ -21,7 +21,7 @@ import {
 
 export default function ComponentLibrary() {
   const [renderComponent, setRenderComponent] = useState(<Intro />);
-  const componentLibraryName = "Avyavaalya";
+  const componentLibraryName = "Avyavaalyay";
   const navItems = [
     "Alert",
     "Avatar",
@@ -88,16 +88,27 @@ export default function ComponentLibrary() {
     }
   };
   return (
-    <div classname="component-library">
+    <div className="component-library">
       <header>
         <h1>{componentLibraryName}</h1>
-        <a className="fab fa-github"></a>
-        <button className="button button--secondary">Download</button>
+        <a
+          href="https://github.com/vermarishi1203/Avyvaalya"
+          className="fab fa-github"
+        ></a>
+        <a href="#" download className="download button button--primary">
+          Download
+        </a>
       </header>
       <section className="components">
         <h2>Components</h2>
         <nav className="side-nav">
           <ul>
+            <li
+              className="list list--stacked installation"
+              onClick={() => setRenderComponent(<Intro />)}
+            >
+              Installation
+            </li>
             {navItems.map((item) => (
               <li
                 className="list list--stacked"
@@ -112,12 +123,19 @@ export default function ComponentLibrary() {
       <section className="docs">{renderComponent}</section>
       <footer>
         <h3>
-          Developed by <a href="https://rishiverma.netlify.app">Rishi Verma</a>.
+          Developed with <i class="fas fa-heart"></i> by{" "}
+          <a href="https://rishiverma.netlify.app">Rishi Verma</a>.
         </h3>
         <nav>
-          <i class="fab fa-github"></i>
-          <i class="fab fa-linkedin"></i>
-          <i class="fab fa-twitter"></i>
+          <a href="https://github.com/vermarishi1203" class="fab fa-github"></a>
+          <a
+            href="https://www.linkedin.com/in/vermarishi1203/"
+            class="fab fa-linkedin"
+          ></a>
+          <a
+            href="https://twitter.com/vermarishi1203"
+            class="fab fa-twitter"
+          ></a>
         </nav>
       </footer>
     </div>
