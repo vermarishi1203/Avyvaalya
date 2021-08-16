@@ -96,7 +96,7 @@ export default function ComponentLibrary() {
           className="fab fa-github"
         ></a>
         <a
-          href="%PUBLIC_URL%/avyavaalya.css"
+          href="https://avyavaalyay.netlify.app/avyavaalya.css"
           download
           className="download button button--primary"
         >

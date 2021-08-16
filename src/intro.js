@@ -2,13 +2,15 @@ export const Intro = () => {
   return (
     <section className="intro">
       <h2 className="colored-text">hello !</h2>
-      <p className="colored-text">Welcome to Avyavaalyay.</p>
-      {/* Ready to kickstart designing your website? just
+      <p className="colored-text">
+        Welcome to Avyavaalyay.Ready to kickstart designing your website? just
         paste the below line in your html document or hit the download button to
-        download the css file. */}
+        download the css file.
+      </p>
 
-      {/* <code>
-        {"<"}link rel="stylesheet" href="styles.css" /{">"}
+      <code>
+        {"<"}link rel="stylesheet"
+        href="https://avyavaalyay.netlify.app/avyavaalya.css" /{">"}
       </code>
       <a
         href="https://avyavaalyay.netlify.app/avyavaalya.css"
@@ -16,7 +18,7 @@ export const Intro = () => {
         className="button button--primary"
       >
         Download CSS
-      </a> */}
+      </a>
       <h2 className="colored-text">Why Avyavaalyay?</h2>
       <p className="colored-text">
         Avyavaalyay is a Component Library which has almost all the basic
