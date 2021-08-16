@@ -1,2 +1,2 @@
 # Avyvaalya
-Created with CodeSandbox
+shifted to vscode
