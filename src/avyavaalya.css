@@ -167,6 +167,9 @@
   color: white;
   background-color: var(--primary-color);
 }
+.button--dismiss:hover {
+  background-color: var(--primary-dark);
+}
 
 /* <<< Card >>> */
 
