@@ -95,9 +95,13 @@ export default function ComponentLibrary() {
           href="https://github.com/vermarishi1203/Avyvaalya"
           className="fab fa-github"
         ></a>
-        {/* <a href="#" download className="download button button--primary">
+        <a
+          href="%PUBLIC_URL%/avyavaalya.css"
+          download
+          className="download button button--primary"
+        >
           Download
-        </a> */}
+        </a>
       </header>
       <section className="components">
         <h2>Components</h2>
