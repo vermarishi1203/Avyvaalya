@@ -10,7 +10,13 @@ export const Intro = () => {
       <code>
         {"<"}link rel="stylesheet" href="styles.css" /{">"}
       </code>
-      <a className="button button--primary">Download CSS</a>
+      <a
+        href="https://avyavaalyay.netlify.app/avyavaalya.css"
+        download
+        className="button button--primary"
+      >
+        Download CSS
+      </a>
       <h2 className="colored-text">Why Avyavaalyay?</h2>
       <p className="colored-text">
         Avyavaalyay is a Component Library which has almost all the basic
