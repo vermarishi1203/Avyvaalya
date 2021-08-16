@@ -91,11 +91,11 @@ export default function ComponentLibrary() {
     <div className="component-library">
       <header>
         <h1>{componentLibraryName}</h1>
-        {/* <a
+        <a
           href="https://github.com/vermarishi1203/Avyvaalya"
           className="fab fa-github"
         ></a>
-        <a href="#" download className="download button button--primary">
+        {/* <a href="#" download className="download button button--primary">
           Download
         </a> */}
       </header>
