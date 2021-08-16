@@ -1,5 +1,5 @@
 import "./styles.css";
-// import "/public/avyavaalya.css";
+import "/public/avyavaalya.css";
 import { useState } from "react";
 import { Intro } from "./intro";
 import {
@@ -91,13 +91,13 @@ export default function ComponentLibrary() {
     <div className="component-library">
       <header>
         <h1>{componentLibraryName}</h1>
-        <a
+        {/* <a
           href="https://github.com/vermarishi1203/Avyvaalya"
           className="fab fa-github"
         ></a>
         <a href="#" download className="download button button--primary">
           Download
-        </a>
+        </a> */}
       </header>
       <section className="components">
         <h2>Components</h2>

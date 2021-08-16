@@ -7,7 +7,7 @@ export const Intro = () => {
         paste the below line in your html document or hit the download button to
         download the css file.
       </p>
-      <code>
+      {/* <code>
         {"<"}link rel="stylesheet" href="styles.css" /{">"}
       </code>
       <a
@@ -16,7 +16,7 @@ export const Intro = () => {
         className="button button--primary"
       >
         Download CSS
-      </a>
+      </a> */}
       <h2 className="colored-text">Why Avyavaalyay?</h2>
       <p className="colored-text">
         Avyavaalyay is a Component Library which has almost all the basic
