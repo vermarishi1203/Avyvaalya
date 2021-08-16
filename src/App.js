@@ -1,4 +1,4 @@
-import "/public/avyavaalya.css";
+import "./avyavaalya.css";
 import "./styles.css";
 import { useState } from "react";
 import { Intro } from "./intro";
