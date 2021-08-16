@@ -107,7 +107,7 @@ export default function ComponentLibrary() {
               className="list list--stacked installation"
               onClick={() => setRenderComponent(<Intro />)}
             >
-              Installation
+              Welcome
             </li>
             {navItems.map((item) => (
               <li
