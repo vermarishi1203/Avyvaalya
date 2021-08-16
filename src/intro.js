@@ -2,11 +2,11 @@ export const Intro = () => {
   return (
     <section className="intro">
       <h2 className="colored-text">hello !</h2>
-      <p className="colored-text">
-        Welcome to Avyavaalyay. Ready to kickstart designing your website? just
+      <p className="colored-text">Welcome to Avyavaalyay.</p>
+      {/* Ready to kickstart designing your website? just
         paste the below line in your html document or hit the download button to
-        download the css file.
-      </p>
+        download the css file. */}
+
       {/* <code>
         {"<"}link rel="stylesheet" href="styles.css" /{">"}
       </code>
