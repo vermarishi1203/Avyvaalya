@@ -40,7 +40,7 @@ export const Card = () => {
         <button className="button--dismiss">X</button>
         <button className="button button--primary">button</button>
       </section>
-      <p className="heading colored-text">Card with Text Overlay</p>
+      {/* <p className="heading colored-text">Card with Text Overlay</p>
       <section className="card card--text-overlay">
         <img
           className="card__image--overlay"
@@ -53,7 +53,7 @@ export const Card = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <button className="button ">button</button>
-      </section>
+      </section> */}
       <p className="heading colored-text">Text Only Card</p>
       <section className="card">
         <h3 className="card__title">title</h3>
